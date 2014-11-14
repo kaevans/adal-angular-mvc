@@ -1,11 +1,12 @@
 ﻿<!DOCTYPE html>
-<html ng-app="app">
+<html ng-app="app" ng-controller="homeCtrl">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+
 </head>
 <body>
 
@@ -14,7 +15,7 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/ng")
-    @Scripts.Render("~/bundles/adal")
+    <script src="https://secure.aadcdn.microsoftonline-p.com/lib/0.0.1/js/adal.js"></script>
     @Scripts.Render("~/bundles/app")
 
 </body>

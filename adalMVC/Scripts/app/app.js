@@ -33,11 +33,15 @@ app.config(['$routeProvider', '$httpProvider', 'adalAuthenticationServiceProvide
 
     adalAuthenticationServiceProvider.init(
         {
-            tenant: 'your tenant ID here',                      //ex: fabrikam.onmicrosoft.com
-            clientId: 'your client ID here',                    //ex: aaaaaaaa-ffff-8888-9999-ffffffffffff
-            extraQueryParameter: 'nux=1'
+            // Config to specify endpoints and similar for your app
+            tenant: '0fd157fc-29ea-4fb5-bdbc-a195bd16ff80',
+            clientId: 'cb68f72f-2b04-42e1-bcf6-db25ddd48a5c',
+            //redirectUri : 'your site', optional
+            //endpoints: endpoints  // optional
         },
         $httpProvider   // pass http provider to inject request interceptor to attach tokens
         );
+
+     
 
 }]);
