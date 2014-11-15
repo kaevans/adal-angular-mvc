@@ -24,9 +24,6 @@ namespace adalMVC
                       "~/Scripts/angular.js",
                       "~/Scripts/angular-route.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/adal").Include(
-                      "~/Scripts/adal.js"));
-
             bundles.Add(new ScriptBundle("~/bundles/app").IncludeDirectory("~/Scripts/App", "*.js", true));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
